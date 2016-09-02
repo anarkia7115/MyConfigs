@@ -133,3 +133,15 @@ export PATH="/home/shawn/workspace/protobuf-2.5.0/src:$PATH"
 # hadoop
 export HADOOP_HOME="/home/shawn/workspace/hadoop-2.7.2"
 export PATH="$PATH:$HADOOP_HOME/bin"
+export PATH="$PATH:$HADOOP_HOME/sbin"
+
+# kea
+export KEAHOME="/home/shawn/workspace/PubMed/kea-5.0_full"
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/commons-logging.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/icu4j_3_4.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/iri.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/jena.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/kea-5.0.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/snowball.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/weka.jar
+export CLASSPATH=$CLASSPATH:$KEAHOME/lib/xercesImpl.jar

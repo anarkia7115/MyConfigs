@@ -2,6 +2,7 @@ colorscheme elflord
 
 set nocompatible              " be iMproved, required
 set hlsearch
+set nu
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -11,6 +12,8 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+Plugin 'kovisoft/slimv'
+Plugin 'tagbar'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -61,3 +64,8 @@ nnoremap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap \t :Tlist<CR>
 imap ii <Esc>
+
+" tagbar
+" let g:tagbar_ctags_bin=1
+nmap <C-t> :TagbarToggle<CR>
+" set guifont=Monospace\ 12
